@@ -2,376 +2,445 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
 /* Start your code here: */
 html {
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
-	background-color: #000;
+  background-color: #000;
 }
 h1 {
-	font-size: 2rem;
-	font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 h2 {
-	font-size: 1.5rem;
-	font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 p {
-	font-weight: 300;
+  font-weight: 300;
 }
 .flex {
-	display: flex;
+  display: flex;
 }
-
 /* Header & Nav Styles */
 header {
-	background-color: #000;
-	color: #fff;
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	padding: 1.5rem 0;
-	border-bottom: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #fff;
 }
 nav {
-	display: flex;
-	justify-content: space-between;
-	height: 100%;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 nav #logo {
-	margin-left: 1rem;
-	width: 25%;
+  margin-left: 1rem;
+  width: 25%;
 }
 .nav-list {
-	display: flex;
-	list-style: none;
-	margin-right: 1rem;
+  display: flex;
+  list-style: none;
+  margin-right: 1rem;
 }
 .nav-list a {
-	align-self: center;
-	padding: 1rem;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 10px;
-	font-weight: 600;
-}
-.nav-list a:visited {
-	color: #fff;
+  align-self: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
 }
 .nav-list a:hover {
-	background-color: #f37321;
-	color: #000;
-	transition-duration: .4s;
+  background-color: #f37321;
+  color: #000;
+  transition-duration: .4s;
 }
-
 /* Hero Section Styles */
 #hero {
-	position: relative;
-	text-align: center;
-	color: #fff;
-	width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  width: 100%;
 }
 #hero #hero-logo {
-	position: absolute;
-	width: 55%;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  width: 55%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #hero img {
-	width: 100%;
-	margin-top: 96px;
+  width: 100%;
+  margin-top: 96px;
 }
-
 /* Number 1 Section Styles */
 #number1 {
-	margin: 3rem 1rem;
+  margin: 3rem 1rem;
 }
 #number1 h2 {
-	color: #fff;
-	text-align: center;
-	margin: 1rem 1rem .5rem 1rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 1rem .5rem 1rem;
 }
 #number1 #graphic {
-	width: 100%;
+  width: 100%;
 }
 .number1-img {
-	display: none;
-	width: 100%;
-	margin-top: .5rem;
+  display: none;
+  width: 100%;
+  margin-top: .5rem;
 }
-
 /* About Us Section Styles */
 #about {
-	background-color: #fff;
-	margin: 0 .5rem;
-	padding: 1rem;
+  background-color: #fff;
+  margin: 0 .5rem;
+  padding: 1rem;
 }
 #about h2 {
-	text-align: center;
-	margin-top: .5rem;
+  text-align: center;
+  margin-top: .5rem;
 }
 #about p {
-	line-height: 1.25rem;
+  line-height: 1.25rem;
 }
 #about img {
-	width: 100%;
-	padding: 1rem 4rem 1rem 0;
+  width: 100%;
+  padding: 1rem 4rem 1rem 0;
 }
-
 /* Bikes Section Styles */
 #bikes {
-	margin: 3rem 1rem 3rem 1rem;
+  margin: 3rem 1rem 3rem 1rem;
 }
 #bikes h2 {
-	text-align: center;
-	color: #fff;
-	margin: 2rem 1rem .5rem 1rem;
+  text-align: center;
+  color: #fff;
+  margin: 2rem 1rem .5rem 1rem;
 }
 #bikes figure {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 #bikes figure img {
-	width: 100%;
-	transition: all .3s;
-	border-radius: 5px;
+  width: 100%;
+  transition: all .3s;
+  border-radius: 5px;
 }
 #bikes figure img:hover {
-	transform: scale(1.025);
+  transform: scale(1.025);
 }
 #bikes figure figcaption {
-	color: #fff;
-	font-size: .75rem;
-	text-align: center;
-	padding-top: .25rem;
+  color: #fff;
+  font-size: .75rem;
+  text-align: center;
+  padding-top: .25rem;
 }
-
 /* Share Section Styles */
 #share {
-	margin: 1rem;
+  margin: 1rem;
 }
 #share h2 {
-	text-align: center;
-	color: #fff;
-	line-height: 1.5rem;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5rem;
 }
 #share img {
-	width: 100%;
-	padding-top: 1rem;
+  width: 100%;
+  padding-top: 1rem;
 }
 .share-button {
-	background-color: #f37321;
-	margin: .5rem;
-	padding: 1rem 0 1rem 0;
-	border-radius: 10px;
-	font-size: .75rem;
-	font-weight: 600;
-	text-align: center;
-	width: 150px;
-	transition: all .4s ease;
-	cursor: pointer;
+  background-color: #f37321;
+  margin: .5rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10px;
+  font-size: .75rem;
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  transition: all .4s ease;
+  cursor: pointer;
 }
 .share-button:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 #share a {
-	margin: 0;
-	padding: 0;
-	justify-content: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
-
 /* Footer Styles */
 footer {
-	margin: 0;
-	padding: 1rem;
-	background-color: #fff;
-	text-align: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
 }
-footer #contact h2,p {
-	padding: .5rem;
+footer #contact h2,
+p {
+  padding: .5rem;
 }
 footer #social h2 {
-	padding: .5rem;
+  padding: .5rem;
 }
 footer .fab {
-	color: #f37321;
-	font-size: 2.5rem;
-	padding: .5rem;
+  color: #f37321;
+  font-size: 2.5rem;
+  padding: .5rem;
 }
-
 /* Media Queries */
 @media only screen and (max-width: 325px) {
-	.nav-list a {
-		padding: .5rem;
-	}
+  .nav-list a {
+    padding: .5rem;
+  }
 }
 @media only screen and (min-width: 450px) {
-	#number1 h2 {
-		margin: 1rem 1.5rem .5rem 1.5rem;
-		line-height: 1.5rem;
-	}
+  #number1 h2 {
+    margin: 1rem 1.5rem .5rem 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 @media only screen and (min-width: 465px) {
-	nav #logo {
-		width: 20%;
-	}
-	#number1 h2 {
-		margin: 1rem 2rem .5rem 2rem;
-		line-height: 1.5rem;
-	}
+  nav #logo {
+    width: 20%;
+  }
+  #number1 h2 {
+    margin: 1rem 2rem .5rem 2rem;
+    line-height: 1.5rem;
+  }
 }
 @media only screen and (min-width: 481px) {
-	nav #logo {
-		width: 20%;
-	}
-	#number1 h2 {
-		margin: 1rem 2.5rem .5rem 2.5rem;
-		line-height: 1.5rem;
-	}
+  nav #logo {
+    width: 20%;
+  }
+  #number1 h2 {
+    margin: 1rem 2.5rem .5rem 2.5rem;
+    line-height: 1.5rem;
+  }
 }
 @media only screen and (min-width: 500px) {
-	nav #logo {
-		width: 20%;
-	}
-	#hero #hero-logo {
-		position: absolute;
-		width: 55%;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	#number1 h2 {
-		margin: 1rem 4rem .5rem 4rem;
-		line-height: 1.5rem;
-	}
+  nav #logo {
+    width: 20%;
+  }
+  #hero #hero-logo {
+    position: absolute;
+    width: 55%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #number1 h2 {
+    margin: 1rem 4rem .5rem 4rem;
+    line-height: 1.5rem;
+  }
 }
 @media only screen and (min-width: 601px) {
-	#bike-gallery {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	#bike-gallery figure {
-		flex-basis: 45%;
-	}
-	#share-gallery {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	#share-gallery img {
-		width: 45%;
-		padding: 1rem .25rem;
-	}
+  #bike-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #bike-gallery figure {
+    flex-basis: 45%;
+  }
+  #share-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #share-gallery img {
+    width: 45%;
+    padding: 1rem .25rem;
+  }
 }
 @media only screen and (min-width: 768px) {
-	nav #logo {
-		width: 15%;
-	}
-	#number1 #container {
-		display: flex;
-		flex-direction: row;
-	}
-	.number1-img {
-		display: flex;
-		width: 25%;
-	}
-	.first {
-		order: 1;
-	}
-	.third {
-		order: 3;
-	}
-	#number1 #graphic {
-		order: 2;
-		width: 50%;
-	}
+  nav #logo {
+    width: 15%;
+  }
+  #number1 #container {
+    display: flex;
+    flex-direction: row;
+  }
+  .number1-img {
+    display: flex;
+    width: 25%;
+  }
+  .first {
+    order: 1;
+  }
+  .third {
+    order: 3;
+  }
+  #number1 #graphic {
+    order: 2;
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 900px) {
-	nav #logo {
-		width: 10%;
-	}
-	#about div {
-		display: flex;
-		justify-content: space-between;
-	}
-	#about div > p {
-		order: 2;
-		width: 50%;
-		align-self: center;
-		line-height: 1.75rem;
-	}
-	#about img {
-		width: 50%;
-	}
-	#bike-gallery figure {
-		flex-basis: 30%;
-	}
+  nav #logo {
+    width: 10%;
+  }
+  #about div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #about div > p {
+    order: 2;
+    width: 50%;
+    align-self: center;
+    line-height: 1.75rem;
+  }
+  #about img {
+    width: 50%;
+  }
+  #bike-gallery figure {
+    flex-basis: 30%;
+  }
 }
 @media only screen and (min-width: 1028px) {
-	#hero #hero-logo {
-		width: 50%;
-		top: 40%;
-	}
-	#number1, #about {
-		margin-top: 2rem;
-	}
-	#share-gallery img {
-		width: 22%;
-		padding-top: 1rem;
-	}
-	#share a.flex {
-		flex-direction: row;
-	}
+  #hero #hero-logo {
+    width: 50%;
+    top: 40%;
+  }
+  #number1,
+  #about {
+    margin-top: 2rem;
+  }
+  #share-gallery img {
+    width: 22%;
+    padding-top: 1rem;
+  }
+  #share a.flex {
+    flex-direction: row;
+  }
 }
