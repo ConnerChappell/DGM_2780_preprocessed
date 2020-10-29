@@ -50,12 +50,7 @@ nav {
     margin-right: 1rem;
     
     a {
-        align-self: center;
-        padding: 1rem;
-        text-decoration: none;
-        color: @font-color;
-        border-radius: 10px;
-        font-weight: @semibold-weight;
+        .nav-a-mixin();
     }
     a:hover {
         background-color: @primary-orange;
@@ -64,7 +59,7 @@ nav {
     }
 }
 
-
+/****************** Home Page Styles Start *****************/
 /* Hero Section Styles */
 #hero {
 	position: relative;
@@ -171,20 +166,74 @@ nav {
     }
 }
 .share-button {
-	background-color: @primary-orange;
-	margin: .5rem;
-	padding: 1rem 0 1rem 0;
-	border-radius: 10px;
-	font-size: .75rem;
-	font-weight: @semibold-weight;
-	text-align: center;
-	width: 150px;
-	transition: all .4s ease;
-	cursor: pointer;
+	.button-mixin(@primary-orange, 10px, 150px);
 }
 .share-button:hover {
 	transform: scale(1.1);
 }
+/****************** Home Page Styles End *****************/
+
+
+/**************** Contact Page Styles Start ****************/
+.contact-h1 {
+    position: relative;
+    top: 175px;
+    color: @font-color;
+    text-align: center;
+}
+
+// Form Styles
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+input {
+    font-size: 18px;
+    color: @font-color;
+    margin: .5rem 1rem;
+    background-color: transparent;
+    outline: 0;
+    width: 300px;
+    padding: .5rem;
+    .border-mixin();
+}
+input:focus {
+    .border-mixin();
+}
+textarea {
+    font-size: 18px;
+    color: @font-color;
+    font-family: @font-stack;
+    margin: .5rem 1rem;
+    height: 150px;
+    width: 300px;
+    padding: .5rem;
+    resize:vertical;
+    background-color: transparent;
+    .border-mixin();
+  }
+textarea:focus {
+    .border-mixin();
+}
+.contact-button {
+    justify-content: center;
+}
+.submit-button {
+    .button-mixin(@primary-orange, 10px, 150px);
+    margin-bottom: 6rem;
+}
+.submit-button:hover {
+    transform: scale(1.1);
+}
+/**************** Contact Page Styles End ****************/
+
 
 /* Footer Styles */
 footer {
@@ -205,6 +254,36 @@ footer {
         padding: .5rem;
     }
 }
+
+
+/* Mixins */
+.nav-a-mixin {
+    align-self: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: @font-color;
+    border-radius: 10px;
+    font-weight: @semibold-weight;
+}
+.border-mixin {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+// Button Mixin with Parameters
+.button-mixin(@background-color, @border-radius, @width) {
+	margin: .5rem;
+	padding: 1rem 0 1rem 0;
+	font-size: .75rem;
+	font-weight: @semibold-weight;
+	text-align: center;
+	transition: all .4s ease;
+    cursor: pointer;
+    
+    background-color: @background-color;
+    border-radius: @border-radius;
+    width: @width;
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 325px) {
