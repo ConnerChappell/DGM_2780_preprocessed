@@ -156,7 +156,7 @@ header {
   color: #ffffff;
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   padding: 1.5rem 0;
   border-bottom: 1px solid #fff;
 }
@@ -164,7 +164,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 nav #logo {
   margin-left: 1rem;
@@ -226,7 +226,7 @@ nav #logo {
 /* About Us Section Styles */
 #about {
   background-color: #ffffff;
-  margin: 0 .5rem;
+  margin: 0;
   padding: 1rem;
 }
 #about h2 {
