@@ -129,12 +129,12 @@ table {
 /* Start your code here: */
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
 }
 body {
-  background-color: #000;
+  background-color: #000000;
 }
 h1 {
   font-size: 2rem;
@@ -152,8 +152,8 @@ p {
 }
 /* Header & Nav Styles */
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -179,7 +179,7 @@ nav #logo {
   align-self: center;
   padding: 1rem;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   border-radius: 10px;
   font-weight: 600;
 }
@@ -192,7 +192,7 @@ nav #logo {
 #hero {
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   width: 100%;
 }
 #hero #hero-logo {
@@ -211,7 +211,7 @@ nav #logo {
   margin: 3rem 1rem;
 }
 #number1 h2 {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   margin: 1rem 1rem .5rem 1rem;
 }
@@ -225,7 +225,7 @@ nav #logo {
 }
 /* About Us Section Styles */
 #about {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0 .5rem;
   padding: 1rem;
 }
@@ -246,7 +246,7 @@ nav #logo {
 }
 #bikes h2 {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   margin: 2rem 1rem .5rem 1rem;
 }
 #bikes figure {
@@ -261,7 +261,7 @@ nav #logo {
   transform: scale(1.025);
 }
 #bikes figure figcaption {
-  color: #fff;
+  color: #ffffff;
   font-size: .75rem;
   text-align: center;
   padding-top: .25rem;
@@ -272,7 +272,7 @@ nav #logo {
 }
 #share h2 {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   line-height: 1.5rem;
 }
 #share img {
@@ -303,7 +303,7 @@ nav #logo {
 footer {
   margin: 0;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 footer #contact h2,
