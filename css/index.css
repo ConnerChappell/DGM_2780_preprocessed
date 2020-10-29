@@ -279,6 +279,11 @@ nav #logo {
   width: 100%;
   padding-top: 1rem;
 }
+#share a {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 .share-button {
   background-color: #f37321;
   margin: .5rem;
@@ -294,11 +299,6 @@ nav #logo {
 .share-button:hover {
   transform: scale(1.1);
 }
-#share a {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-}
 /* Footer Styles */
 footer {
   margin: 0;
@@ -307,7 +307,7 @@ footer {
   text-align: center;
 }
 footer #contact h2,
-p {
+footer p {
   padding: .5rem;
 }
 footer #social h2 {
