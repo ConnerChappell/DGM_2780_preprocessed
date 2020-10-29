@@ -1,3 +1,5 @@
 # preprocessing-project-DGM-2780
 
-Website layout mimicked (same as first assignment): https://www.missmarysmix.com/
+URL for layout (same as first assignment): https://www.missmarysmix.com/
+
+Final URL for project: https://dgm2780-preprocessed-css-website.netlify.app/
